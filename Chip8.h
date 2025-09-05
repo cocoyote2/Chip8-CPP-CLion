@@ -85,8 +85,6 @@ class Chip8
 		void LoadROM(std::string file_path)
 		{
 			std::ifstream ROM(file_path, std::ios::binary);
-			std::cout << "Chemin absolu : " << std::filesystem::absolute(file_path) << std::endl;
-
 
 			if (ROM.is_open())
 			{
